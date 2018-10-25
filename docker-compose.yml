@@ -84,7 +84,7 @@ services:
   node:
     image: node:8
     volumes:
-      - ./:/var/www:cached
+      - ./:/var/www
     command: sh -c 'npm install; npm run watch'
     working_dir: /var/www
     networks:
