@@ -161,6 +161,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\ShutterStockProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        App\Providers\RepositoryServiceProvider::class,
     ],
 
     /*
