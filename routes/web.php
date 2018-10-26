@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SearchController@index')->name('searchIndex');
+Route::get('/search', 'SearchController@search')->name('search');
+
+Route::get('/results/{id}', 'SearchResultsController@index')->name('searchResults');
