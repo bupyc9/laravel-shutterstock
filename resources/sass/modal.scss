@@ -1,0 +1,13 @@
+.modal.show {
+  display: block;
+}
+
+.modal-body {
+  .form-group {
+    width: 100%;
+  }
+
+  .form-control {
+    flex-grow: 1;
+  }
+}

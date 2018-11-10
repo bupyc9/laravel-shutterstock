@@ -5,11 +5,15 @@
 @section('content')
     @include('search.form')
 
-    @if ($items)
+    @if ($searchRequest)
+        <a href="{{route('searchResultsEmails', ['id' => $searchRequest->id])}}"
+           class="btn btn-primary mt-2 mb-2 send-to-email-js" title="Send to email">
+            <span class="far fa-envelope"></span>
+        </a>
         <div class="card-columns">
-            @foreach($items as $item)
+            @foreach($searchRequest->results as $result)
                 <div class="card">
-                    <img src="{{$item->url}}" alt="" class="card-img">
+                    <img src="{{$result->url}}" alt="" class="card-img">
                 </div>
             @endforeach
         </div>

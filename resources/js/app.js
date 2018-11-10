@@ -20,3 +20,6 @@ require('./bootstrap');
 // const app = new Vue({
 //     el: '#app'
 // });
+
+
+require('./search/popup.email');

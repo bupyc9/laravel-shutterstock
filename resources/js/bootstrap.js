@@ -56,3 +56,5 @@ if (token) {
 // });
 
 require('@fortawesome/fontawesome-free');
+
+require('magnific-popup');

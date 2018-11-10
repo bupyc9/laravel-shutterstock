@@ -19,7 +19,7 @@ class SearchController extends Controller
 {
     public function index(): View
     {
-        return view('search.index', ['items' => collect([]), 'query' => '']);
+        return view('search.index', ['searchRequest' => null, 'query' => '']);
     }
 
     /**

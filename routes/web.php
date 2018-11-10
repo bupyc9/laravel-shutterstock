@@ -15,3 +15,5 @@ Route::get('/', 'SearchController@index')->name('searchIndex');
 Route::get('/search', 'SearchController@search')->name('search');
 
 Route::get('/results/{id}', 'SearchResultsController@index')->name('searchResults');
+Route::get('/results/{id}/send-email', 'SearchResultsController@emails')->name('searchResultsEmails');
+Route::post('/results/{id}/send-email', 'SearchResultsController@sendToEmail')->name('searchResultsSendEmail');
